@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="colorbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.colorbox-min.js"></script>
+    
+    <script>
+        jQuery(document).ready(function () {
+          jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1', maxWidth :'100%' });
+        });
+    </script>
+    
+  </head>
+  <body>
+    <a class='gallery' href='image1.jpg'>Photo_1</a>
+    <a class='gallery' href='image2.jpg'>Photo_2</a>
+    <a class='gallery' href='image3.jpg'>Photo_3</a>
+    <a class='gallery' href='image4.jpg'>Photo_4</a>
+
+    <script>
+        jQuery('a.gallery').colorbox();
+      </script>
+  </body>
+</html>
